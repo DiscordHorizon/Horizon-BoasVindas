@@ -8,12 +8,8 @@ bot.on('ready', () => {
     console.log('[Bot] Connected');
 });
 
-bot.on('message', message => {
-    if (message.author.bot) return;
-    if (message.content === '!bravanzin') {
-        welcome(message);
-        //console.log(message.author)
-    }
-})
+bot.on('guildMemberAdd', user => {
+    welcome(user);
+});
 
 bot.login(discord);
