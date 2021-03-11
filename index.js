@@ -1,8 +1,8 @@
-const discord = require('discord.js');
-const { config } = require('./utils/horizonUtils');
+const Discord = require('discord.js');
+const { discord } = require('./utils/horizonUtils');
 const { welcome } = require('./include/welcome');
 
-const bot = new discord.Client();
+const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log('[Bot] Connected');
@@ -16,4 +16,4 @@ bot.on('message', message => {
     }
 })
 
-bot.login(config.discord);
+bot.login(discord);
