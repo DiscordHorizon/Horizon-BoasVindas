@@ -1,5 +1,5 @@
 const { MessageAttachment } = require("discord.js");
-const { channels } = require("../config/index");
+const { channels } = require("../utils/horizonUtils");
 const Canvas = require("canvas");
 
 // * register font
