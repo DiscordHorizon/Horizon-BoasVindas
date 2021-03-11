@@ -7,6 +7,7 @@ try {
 
 exports.discord = config ? config.discord : process.env.DISCORD;
 exports.channels = {
-    welcome: config ? config.channels.welcome : process.env.C_WELCOME,
-    rules: config ? config.channels.rules : process.env.C_RULES,
+    users: config ? config.channels.users : process.env.USERS,
+    welcome: config ? config.channels.welcome : process.env.WELCOME,
+    rules: config ? config.channels.rules : process.env.RULES,
 };
