@@ -1,5 +1,5 @@
 const discord = require('discord.js');
-const { config } = require('./config/index');
+const { config } = require('./utils/horizonUtils');
 const { welcome } = require('./include/welcome');
 
 const bot = new discord.Client();
