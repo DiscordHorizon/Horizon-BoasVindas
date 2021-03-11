@@ -5,6 +5,8 @@ try {
     config = null;
 }
 
-exports.config = {
-    discord: config ? config.discord : process.env.DISCORD,
+exports.discord = config ? config.discord : process.env.DISCORD;
+exports.channels = {
+    welcome: config ? config.channels.welcome : process.env.C_WELCOME,
+    rules: config ? config.channels.rules : process.env.C_RULES,
 };
