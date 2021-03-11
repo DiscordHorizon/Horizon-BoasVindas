@@ -19,7 +19,7 @@ module.exports = {
 
         // * background
         const background = await Canvas.loadImage(
-            "./src/assets/background.jpg"
+            "./assets/background.jpg"
         );
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
